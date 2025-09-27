@@ -64,7 +64,7 @@
 {{- end }}
 
 <article class="{{ $class }}">
-  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default $.IsHome }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
     <h2 class="entry-hint-parent">
@@ -92,6 +92,9 @@
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
 {{- end }}
+
+
+
 
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
