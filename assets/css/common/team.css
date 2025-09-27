@@ -1,9 +1,8 @@
-/* === Team row (no Tailwind) ============================================== */
 .team-row{
   display:grid;
-  grid-template-columns: 120px 1fr;    /* was 420px */
+  grid-template-columns: 120px 1fr;  
   align-items:start;
-  gap: clamp(1.5rem, 3vw, 3.5rem);     /* tighter gap */
+  gap: clamp(1.5rem, 3vw, 3.5rem);   
 }
 .team-row--flip{ grid-template-columns: 1fr 420px; }
 .team-row--flip .team-photo{ order: 2; }
