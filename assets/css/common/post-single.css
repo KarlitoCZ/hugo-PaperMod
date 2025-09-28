@@ -1,11 +1,15 @@
 .page-header,
 .post-header {
+    font-weight: bold;
+    font-size: 50px;
     margin: 24px auto var(--content-gap) auto;
 }
 
 .post-title {
+    
     margin-bottom: 2px;
-    font-size: 40px;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .post-description {
@@ -53,27 +57,33 @@
 .post-content h1 {
     margin: 40px auto 32px;
     font-size: 40px;
+    font-weight: bold;
 }
 
 .post-content h2 {
     margin: 32px auto 24px;
     font-size: 32px;
+    font-weight: bold;
 }
 
 .post-content h3 {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .post-content h4 {
     font-size: 16px;
+    font-weight: bold;
 }
 
 .post-content h5 {
     font-size: 14px;
+    font-weight: bold;
 }
 
 .post-content h6 {
     font-size: 12px;
+    font-weight: bold;
 }
 
 .post-content a,
