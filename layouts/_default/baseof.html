@@ -6,6 +6,11 @@
 <html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 
 <head>
+
+    {{ with (templates.Defer (dict "key" "global")) }}
+        {{ partial "css.html" . }}
+    {{ end }}
+
     {{- partial "head.html" . }}
 </head>
 
