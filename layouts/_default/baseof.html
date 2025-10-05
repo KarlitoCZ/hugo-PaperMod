@@ -12,6 +12,7 @@
     {{ end }}
 
     {{- partial "head.html" . }}
+
 </head>
 
 <body class="
@@ -23,6 +24,10 @@
 {{- end -}}
 " id="top">
     {{- partialCached "header.html" . .Page -}}
+
+    {{ if .IsHome }}
+        {{ partial "hero-strip.html" . }}
+    {{ end }}
     <main class="main">
         {{- block "main" . }}{{ end }}
     </main>
