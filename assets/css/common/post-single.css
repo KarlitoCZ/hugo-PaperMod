@@ -1,7 +1,7 @@
 .page-header,
 .post-header {
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(32px, 4vw + 18px, 64px);
     margin: 24px auto var(--content-gap) auto;
 }
 
@@ -9,7 +9,7 @@
     
     margin-bottom: 2px;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 0.7em;
 }
 
 .post-description {
