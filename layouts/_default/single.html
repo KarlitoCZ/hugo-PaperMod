@@ -13,6 +13,7 @@
       </span>
       {{- end }}
     </h1>
+    
     {{- if .Description }}
     <div class="post-description">
       {{ .Description }}
@@ -26,12 +27,17 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
+    
   </header>
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
   {{- end }}
+
+{{- if .HasShortcode "gallery" }}
+<a class="post-gallery-link text-base font-bold italic" href="#gallery">Fotografie zde</a>
+{{- end }}
 
   {{- if .Content }}
   <div class="post-content">

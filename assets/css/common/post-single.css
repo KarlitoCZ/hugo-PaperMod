@@ -6,10 +6,15 @@
 }
 
 .post-title {
-    
     margin-bottom: 2px;
     font-weight: bold;
     font-size: 0.7em;
+}
+
+
+.post-gallery-link a {
+    font-size: 18px;
+    font-style: italic;
 }
 
 .post-description {
